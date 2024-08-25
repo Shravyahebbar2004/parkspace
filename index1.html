@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Parking Management</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>College Parking Management</h1>
+    </header>
+
+    <div id="login-container">
+        <img src="C:\Users\Shravya\OneDrive\Pictures\Screenshots\Screenshot 2024-08-25 213904.png" alt="App Logo" id="app-logo">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+                <option value="security">Security Guard</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <main id="main-content" style="display:none;">
+        <div id="map">
+            <img src="C:\Users\Shravya\OneDrive\Pictures\Screenshots\Screenshot 2024-08-25 221701.png" alt="College Map" id="college-map">
+            <!-- Parking spots will be added dynamically here -->
+        </div>
+        <div id="info">
+            <h2>Parking Info</h2>
+            <p id="status">Select a parking area on the map.</p>
+        </div>
+    </main>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
